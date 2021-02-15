@@ -26,7 +26,7 @@ A dependency graph represents dependencies of the project files towards each oth
 
 The example below is the visual dependency graph representation of the example files of this repository.
 
-![JS to AST](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/02.png)
+![Dependency Graph](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/02.png)
 
 ## Installation
 
