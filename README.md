@@ -19,7 +19,7 @@ To find the dependencies inside a file, we need to parse it. We can do this usin
 
 Now that we know what our dependencies, we store them into a list for later.
 
-![JS to AST](https://github.com/pasenidis/js-bundler/blob/master/docs/assets/01.png)
+![JS to AST](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/01.png)
 
 ## Installation
 
