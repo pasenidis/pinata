@@ -1,6 +1,9 @@
+const fs = require("fs");
 const { transformFromAst } = require("@babel/core");
 const babylon = require("babylon");
 const traverse = require("babel-traverse").default;
+
+let ID = 0;
 
 const createAsset = (filename) => {
     const file = fs.readFileSync(filename, "utf-8");
@@ -31,4 +34,4 @@ const createAsset = (filename) => {
     };
 };
 
-export { createAsset };
+module.exports = { createAsset };

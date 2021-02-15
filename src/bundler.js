@@ -1,5 +1,3 @@
-let ID = 0;
-
 const bundle = (graph) => {
   let modules = "";
 

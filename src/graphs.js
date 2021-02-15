@@ -1,6 +1,5 @@
-const fs = require("fs");
 const path = require("path");
-const { createAsset } = require('./assets');
+const { createAsset } = require('./assets'); 
 
 const createGraph = (entry) => {
     const asset = createAsset(entry);
@@ -26,4 +25,4 @@ const createGraph = (entry) => {
     return queue;
 };
 
-export { createGraph };
+module.exports = { createGraph };
