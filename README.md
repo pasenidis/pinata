@@ -30,7 +30,7 @@ The example below is the visual dependency graph representation of the example f
 
 ## Installation
 
-Coming soon.
+I will write about this part when I will publish this somewhere (npm).
 
 <!-- ```bash
 run do something
@@ -38,11 +38,13 @@ run do something
 
 ## Usage
 
-Coming soon.
+Currently, it's published nowhere but you can still use it.
 
-<!-- ```
-
-``` -->
+```bash
+git clone https://github.com/pasenidis/pinata
+yarn install # or npm install
+node src/cli/index.js
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
