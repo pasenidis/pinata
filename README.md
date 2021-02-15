@@ -1,4 +1,4 @@
-# Bundler (no name yet)
+# Piñata 📦
 
 Bundler is a tool for dealing with JS bundling.
 
