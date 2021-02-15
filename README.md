@@ -12,16 +12,16 @@ Well, here are the steps my bundler takes:
 - Parse the entry file and generate an **AST**;
 - Create a **dependency graph**;
 - Create an **AST** for every dependency;
-- **Transpile** everything with Babel;
+- **Transpile** everything with Babel
 
-## Parsing the entry file
+### Parsing the entry file
 To find the dependencies inside a file, we need to parse it. We can do this using AST (or simply syntax trees) parsers.
 
 Now that we know our dependencies, we store them into a list for later.
 
 ![JS to AST](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/01.png)
 
-## Dependency graphs
+### Dependency graphs
 A dependency graph represents dependencies of the project files towards each other.
 
 The example below is the visual dependency graph representation of the example files of this repository.

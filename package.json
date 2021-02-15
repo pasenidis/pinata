@@ -6,7 +6,7 @@
   "author": "Edward Pasenidis <edward@pasenidis.com>",
   "license": "MIT",
   "scripts": {
-    "test": "node src/bundler.js"
+    "build:example": "node bundle-example.js"
   },
   "dependencies": {
     "@babel/core": "^7.11.6",
