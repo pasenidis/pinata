@@ -17,7 +17,7 @@ Well, here are the steps my bundler takes:
 ## Parsing the entry file
 To find the dependencies inside a file, we need to parse it. We can do this using AST (or simply syntax trees) parsers.
 
-Now that we know what our dependencies, we store them into a list for later.
+Now that we know our dependencies, we store them into a list for later.
 
 ![JS to AST](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/01.png)
 
