@@ -10,25 +10,18 @@ const bundle = (graph) => {
       ],`;
   });
 
-  const result = `
-    (function(modules) {
+  const result = `(function(modules) {
       function require(id) {
         const [fn, mapping] = modules[id];
-
         function localRequire(name) {
           return require(mapping[name]);
         }
-
         const module = { exports: {} };
-        
-        fn(localRequire, module, module.exports);
-        
+        fn(localRequire, module, module.exports); 
         return module.exports;
       }
-
       require(0);
-    })({${modules}})
-  `;
+    })({${modules}})`;
 
   return result;
 };
