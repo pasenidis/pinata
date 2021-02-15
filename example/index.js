@@ -1,3 +1,3 @@
-import box from './box';
+import log from './log';
 
-box();
+log();
