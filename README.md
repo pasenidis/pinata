@@ -21,6 +21,13 @@ Now that we know what our dependencies, we store them into a list for later.
 
 ![JS to AST](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/01.png)
 
+## Dependency graphs
+A dependency graph represents dependencies of the project files towards each other.
+
+The example below is the visual dependency graph representation of the example files of this repository.
+
+![JS to AST](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/02.png)
+
 ## Installation
 
 Coming soon.
