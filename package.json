@@ -1,12 +1,16 @@
 {
-  "name": "pinata",
+  "name": "@pinatajs/core",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/pasenidis/js-bundler",
   "author": "Edward Pasenidis <edward@pasenidis.com>",
   "license": "MIT",
   "scripts": {
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
     "build:example": "node bundle-example.js"
+  },
+  "bin": {
+    "pinata-cli": "src/cli/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.11.6",
