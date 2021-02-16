@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/00.png)
+![Logo](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/logo.png)
 
 # Piñata 📦
 
