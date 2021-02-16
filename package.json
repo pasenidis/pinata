@@ -15,5 +15,8 @@
     "babylon": "^6.18.0",
     "boxen": "^5.0.0",
     "inquirer": "^7.3.3"
+  },
+  "devDependencies": {
+    "babel-preset-minify": "^0.5.1"
   }
 }

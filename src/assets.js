@@ -23,7 +23,7 @@ const createAsset = (filename) => {
     const id = ID++;
   
     const { code } = transformFromAst(ast, null, {
-      presets: ["@babel/preset-env"],
+      presets: ["@babel/preset-env", "minify"],
     });
   
     return {
