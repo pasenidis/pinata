@@ -2,6 +2,17 @@
 
 Bundler is a tool for dealing with JS bundling.
 
+## Table of Contents
+- [Piñata 📦](#pi-ata---)
+  * [How it works](#how-it-works)
+    + [What is Bundling?](#what-is-bundling-)
+    + [Ok, but how?](#ok--but-how-)
+    + [Parsing the entry file](#parsing-the-entry-file)
+    + [Dependency graphs](#dependency-graphs)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+
 ## How it works
 
 ### What is Bundling?
