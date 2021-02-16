@@ -1,37 +1,64 @@
-## Welcome to GitHub Pages
+# Piñata 📦
 
-You can use the [editor on GitHub](https://github.com/pasenidis/pinata/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Bundler is a tool for dealing with JS bundling.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Table of Contents
+- [Piñata 📦](#pi-ata---)
+  * [How it works](#how-it-works)
+    + [What is Bundling?](#what-is-bundling-)
+    + [Ok, but how?](#ok--but-how-)
+    + [Parsing the entry file](#parsing-the-entry-file)
+    + [Dependency graphs](#dependency-graphs)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
 
-### Markdown
+## How it works
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### What is Bundling?
+Bundling is a technique used by developers to reduce the number of HTTP requests for JS files to the minimum. Essentially, in the front end world, to bundle something is to put your whole project into a big, sometimes obfuscated or minified, JS file.
 
-```markdown
-Syntax highlighted code block
+### Ok, but how?
+Well, here are the steps my bundler takes:
+- Parse the entry file and generate an **AST**;
+- Create a **dependency graph**;
+- Create an **AST** for every dependency;
+- **Transpile** everything with Babel
 
-# Header 1
-## Header 2
-### Header 3
+### Parsing the entry file
+To find the dependencies inside a file, we need to parse it. We can do this using AST (or simply syntax trees) parsers.
 
-- Bulleted
-- List
+Now that we know our dependencies, we store them into a list for later.
 
-1. Numbered
-2. List
+![JS to AST](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/01.png)
 
-**Bold** and _Italic_ and `Code` text
+### Dependency graphs
+A dependency graph represents dependencies of the project files towards each other.
 
-[Link](url) and ![Image](src)
+The example below is the visual dependency graph representation of the example files of this repository.
+
+![Dependency Graph](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/02.png)
+
+## Installation
+
+Just install the package:
+
+```bash
+npm i -D @pinatajs/core  # -D means --save-dev which appends the package to the devDependencies object
+# or use yarn if you want
+yarn -D @pinatajs/core
+# or use pnpm
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
 
-### Jekyll Themes
+Just run the command. (I would suggest you to add it as a script)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pasenidis/pinata/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+pinata-cli
+```
 
-### Support or Contact
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Please make sure to update tests as appropriate.
