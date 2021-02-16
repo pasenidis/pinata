@@ -1,3 +1,5 @@
+![Logo](https://raw.githubusercontent.com/pasenidis/js-bundler/main/docs/assets/00.png)
+
 # Piñata 📦
 
 Bundler is a tool for dealing with JS bundling.
