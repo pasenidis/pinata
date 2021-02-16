@@ -30,20 +30,21 @@ The example below is the visual dependency graph representation of the example f
 
 ## Installation
 
-I will write about this part when I will publish this somewhere (npm).
+Just install the package:
 
-<!-- ```bash
-run do something
-``` -->
+```bash
+npm i -D @pinatajs/core  # -D means --save-dev which appends the package to the devDependencies object
+# or use yarn if you want
+yarn -D @pinatajs/core
+# or use pnpm
+```
 
 ## Usage
 
-Currently, it's published nowhere but you can still use it.
+Just run the command. (I would suggest you to add it as a script)
 
 ```bash
-git clone https://github.com/pasenidis/pinata
-yarn install # or npm install
-node src/cli/index.js
+pinata-cli
 ```
 
 ## Contributing
