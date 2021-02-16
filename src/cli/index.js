@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { createGraph } = require("../graphs");
 const { questions } = require("./prompts");
 const { bundle } = require("../bundler");
